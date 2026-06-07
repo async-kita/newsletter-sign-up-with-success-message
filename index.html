@@ -10,12 +10,7 @@
 
     <title>Frontend Mentor | Newsletter sign-up form with success
       message</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
     <main class="content">
@@ -34,64 +29,69 @@
             height="284">
         </picture>
         <div class="card-form__body">
-          <h1 class="card__form-title">Stay updated!</h1>
-          <p class="card__form-description"></p>
-          <ul class="card-form__list">
-            <li class="card-form__item">
-              <span class="card-form__item-image-wrapper">
-                <img
-                  class="card-form__item-image"
-                  src="./assets/images/icon-list.svg"
-                  alt
-                  width="21"
-                  height="21">
-              </span>
-              Product discovery and building what matters
-            </li>
-            <li class="card-form__item">
-              <span class="card-form__item-image-wrapper">
-                <img
-                  class="card-form__item-image"
-                  src="./assets/images/icon-list.svg"
-                  alt
-                  width="21"
-                  height="21">
-              </span>
-              Measuring to ensure updates are a success
-            </li>
-            <li class="card-form__item">
-              <span class="card-form__item-image-wrapper">
-                <img
-                  class="card-form__item-image"
-                  src="./assets/images/icon-list.svg"
-                  alt
-                  width="21"
-                  height="21">
-              </span>
-              And much more!
-            </li>
-          </ul>
-        </div>
-        <form
-          class="card-form__form form"
-          novalidate>
-          <div class="form__wrapper">
-            <label
-              class="form__field"
-              for="email">Email address</label>
-            <span class="form__error"></span>
+          <div class="card-form__content">
+            <h1 class="card__form-title">Stay updated!</h1>
+            <p class="card__form-description">Join 60,000+ product managers
+              receiving monthly updates on:</p>
+            <ul class="card-form__list">
+              <li class="card-form__item">
+                <span class="card-form__item-image-wrapper">
+                  <img
+                    class="card-form__item-image"
+                    src="./assets/images/icon-list.svg"
+                    alt
+                    width="21"
+                    height="21">
+                </span>
+                Product discovery and building what matters
+              </li>
+              <li class="card-form__item">
+                <span class="card-form__item-image-wrapper">
+                  <img
+                    class="card-form__item-image"
+                    src="./assets/images/icon-list.svg"
+                    alt
+                    width="21"
+                    height="21">
+                </span>
+                Measuring to ensure updates are a success
+              </li>
+              <li class="card-form__item">
+                <span class="card-form__item-image-wrapper">
+                  <img
+                    class="card-form__item-image"
+                    src="./assets/images/icon-list.svg"
+                    alt
+                    width="21"
+                    height="21">
+                </span>
+                And much more!
+              </li>
+            </ul>
           </div>
-          <input
-            class="form__email"
-            id="email"
-            type="email"
-            placeholder="email@company.com">
-          <button
-            class="form__button"
-            type="button">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
+          <form
+            class="card-form__form form"
+            novalidate>
+            <div class="form__fieldset">
+              <div class="form__fieldset-wrapper">
+                <label
+                  class="form__label"
+                  for="email">Email address</label>
+                <span class="form__error"></span>
+              </div>
+              <input
+                class="form__email"
+                id="email"
+                type="email"
+                placeholder="email@company.com">
+            </div>
+            <button
+              class="form__button"
+              type="button">
+              <span>Subscribe to monthly newsletter</span>
+            </button>
+          </form>
+        </div>
       </article>
       <article class="card-message">
         <div class="card-message__body">
