@@ -1,52 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./assets/images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+    <title>Frontend Mentor | Newsletter sign-up form with success
+      message</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-</head>
-<body>
-
-  <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+  </head>
+  <body>
+    <main class="content">
+      <article class="card-form">
+        <picture>
+          <source media="(min-width: 1024px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg">
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/images/illustration-sign-up-tablet.svg">
+          <img
+            class="card-form__image"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt
+            width="375"
+            height="284">
+        </picture>
+        <div class="card-form__body">
+          <h1 class="card__form-title">Stay updated!</h1>
+          <p class="card__form-description"></p>
+          <ul class="card-form__list">
+            <li class="card-form__item">
+              <span class="card-form__item-image-wrapper">
+                <img
+                  class="card-form__item-image"
+                  src="./assets/images/icon-list.svg"
+                  alt
+                  width="21"
+                  height="21">
+              </span>
+              Product discovery and building what matters
+            </li>
+            <li class="card-form__item">
+              <span class="card-form__item-image-wrapper">
+                <img
+                  class="card-form__item-image"
+                  src="./assets/images/icon-list.svg"
+                  alt
+                  width="21"
+                  height="21">
+              </span>
+              Measuring to ensure updates are a success
+            </li>
+            <li class="card-form__item">
+              <span class="card-form__item-image-wrapper">
+                <img
+                  class="card-form__item-image"
+                  src="./assets/images/icon-list.svg"
+                  alt
+                  width="21"
+                  height="21">
+              </span>
+              And much more!
+            </li>
+          </ul>
+        </div>
+        <form
+          class="card-form__form form"
+          novalidate>
+          <div class="form__wrapper">
+            <label
+              class="form__field"
+              for="email">Email address</label>
+            <span class="form__error"></span>
+          </div>
+          <input
+            class="form__email"
+            id="email"
+            type="email"
+            placeholder="email@company.com">
+          <button
+            class="form__button"
+            type="button">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </article>
+      <article class="card-message">
+        <div class="card-message__body">
+          <div class="card-message__content">
+            <img
+              class="card-message__image"
+              src="./assets/images/icon-success.svg"
+              alt
+              width="64"
+              height="64">
+            <h2 class="card-message__title">Thanks for subscribing!</h2>
+            <p class="card-message__description">
+              A confirmation email has been sent to
+              <span>ash@loremcompany.com</span>. Please
+              open it and click the button inside to confirm your subscription
+            </p>
+          </div>
+          <button
+            class="card-message__button"
+            type="button">
+            Dismiss message
+          </button>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
