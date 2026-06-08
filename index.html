@@ -11,10 +11,11 @@
     <title>Frontend Mentor | Newsletter sign-up form with success
       message</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/app.js" defer></script>
   </head>
   <body>
-    <main class="content">
-      <article class="card-form">
+    <main class="content" data-js-content>
+      <article class="card-form" data-js-card>
         <picture>
           <source media="(min-width: 1024px)"
             srcset="./assets/images/illustration-sign-up-desktop.svg">
@@ -71,6 +72,7 @@
           </div>
           <form
             class="card-form__form form"
+            data-js-card-form
             novalidate>
             <div class="form__fieldset">
               <div class="form__fieldset-wrapper">
@@ -83,17 +85,18 @@
                 class="form__email"
                 id="email"
                 type="email"
-                placeholder="email@company.com">
+                placeholder="email@company.com"
+                data-js-card-input>
             </div>
             <button
               class="form__button"
-              type="button">
+              type="submit">
               <span>Subscribe to monthly newsletter</span>
             </button>
           </form>
         </div>
       </article>
-      <article class="card-message">
+      <article class="card-message" data-js-message>
         <div class="card-message__body">
           <div class="card-message__content">
             <img
@@ -105,13 +108,14 @@
             <h2 class="card-message__title">Thanks for subscribing!</h2>
             <p class="card-message__description">
               A confirmation email has been sent to
-              <span>ash@loremcompany.com</span>. Please
+              <span data-js-message-email>ash@loremcompany.com</span>. Please
               open it and click the button inside to confirm your subscription
             </p>
           </div>
           <button
             class="card-message__button"
-            type="button">
+            type="button"
+            data-js-message-button>
             <span>Dismiss message</span>
           </button>
         </div>
