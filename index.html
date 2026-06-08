@@ -79,13 +79,17 @@
                 <label
                   class="form__label"
                   for="email">Email address</label>
-                <span class="form__error">Valid email required</span>
+                <span
+                  class="form__error"
+                  id="email-error">Valid email required</span>
               </div>
               <input
                 class="form__email"
                 id="email"
                 type="email"
                 placeholder="email@company.com"
+                aria-describedby="email-error"
+                aria-invalid="false"
                 data-js-card-input>
             </div>
             <button

@@ -45,9 +45,11 @@ class Subscribe {
   onSubmitForm = event => {
     event.preventDefault();
     if (!this.regex.email.test(this.formEmailElement.value)) {
+      this.formEmailElement.setAttribute("aria-invalid", "true");
       return this.cardElement.classList.add(this.stateClasses.isError);
     }
 
+    this.formEmailElement.setAttribute("aria-invalid", "false");
     this.emailMessageElement.textContent = this.formEmailElement.value;
     this.cardElement.classList.remove(this.stateClasses.isError);
     this.rootElement.classList.add(this.stateClasses.isSubmit);
